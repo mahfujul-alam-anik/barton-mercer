@@ -1,0 +1,73 @@
+@media (max-width: 768px) {
+  /*tiny service section css*/
+  .tiny-service.bordered {
+    border-bottom: 2px solid yellow;
+    border-left: none;
+    border-right: none;
+  }
+  .tiny-service {
+    padding: 30px 0px;
+  }
+  .tiny-service-section {
+    padding: 0px 0px;
+  }
+  /*tiny service section css end*/
+  #top-header {
+    display: none !important;
+  }
+  .btn-div {
+    margin-bottom: 50px;
+  }
+  .hero-content p {
+    margin-top: 50px !important;
+    font-size: 17px !important;
+  }
+  .section-title h1 {
+    font-size: 20px !important;
+  }
+  .section-title {
+    margin-top: 130px !important;
+    margin-bottom: 0px !important;
+  }
+  .about {
+    margin: 40px 0px !important;
+  }
+}
+
+/*testimonial section css */
+@media only screen and (max-width: 990px) {
+  .testimonial {
+    text-align: center;
+  }
+  .testimonial .pic {
+    width: 200px;
+    margin: 0 auto;
+    float: none;
+  }
+  .testimonial .pic::before,
+  .testimonial .pic::after {
+    width: 80px;
+    height: 100px;
+  }
+  .testimonial .testimonial-content {
+    width: 100%;
+    float: none;
+  }
+  .testimonial .title {
+    padding: 15px 0 0 0;
+  }
+  .testimonial .post {
+    padding: 0;
+    margin-bottom: 10px;
+  }
+  .owl-theme .owl-controls {
+    width: 100%;
+    position: static;
+    text-align: center;
+  }
+  .owl-theme .owl-controls .owl-buttons div {
+    height: 50px;
+    line-height: 50px;
+  }
+}
+/*testimonial section css end*/

@@ -1,0 +1,469 @@
+/*navbar css*/
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  overflow-x: hidden;
+}
+a.navbar-brand img {
+  width: 300px;
+}
+.bg-control {
+  background: #2f1501;
+  box-shadow: 0px 7px 5px 0px #18121a57;
+}
+#navbarSupportedContent {
+  flex-grow: 0;
+}
+nav.navbar {
+  padding: 5px 30px;
+}
+.active {
+  border-bottom: 2px solid yellow;
+}
+.nav-link {
+  padding-left: 15px !important;
+  padding-right: 15px !important;
+  color: #c9ad4c !important;
+  font-family: inherit;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 14px;
+  line-height: 1.6;
+  position: relative;
+}
+.stickyTop {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  transition: all 1s;
+  transform-origin: top;
+}
+/* *******navbar hover effect*/
+.nav-link::after {
+  content: ' ';
+  position: absolute;
+  left: 50%;
+  bottom: -2px;
+  transform: translateX(-50%) scaleX(0);
+  -webkit-transform: translateX(-50%) scaleX(0);
+  -webkit-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  width: 100%;
+  height: 2px;
+  background-color: #e7d718d6;
+  transition: transform 250ms;
+  -webkit-transition: transform 250ms;
+}
+.nav-link:hover::after {
+  transform: translateX(-50%) scaleX(1);
+  -webkit-transform: translateX(-50%) scaleX(1);
+}
+/* *******navbar hover effect*/
+
+/*navbar css end*/
+
+/*hero section css*/
+.hero-section {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url(../images/hero-img2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 8% 3%;
+}
+.content-details {
+  text-align: center;
+  font-size: 30px;
+  font-family: inherit;
+  background-color: #0d194261;
+  padding: 40px 40px;
+  color: #cecdcc;
+  margin-bottom: 30px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  border-radius: 8px;
+}
+.contact-now-btn {
+  background-color: yellow;
+  padding: 11px 34px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  color: #050201;
+  font-family: arial;
+  font-size: 17px;
+  border-radius: 0px;
+  float: right;
+  font-weight: 600;
+  border-radius: 50px;
+  border: 2px solid transparent;
+  transition: all 0.5s;
+}
+.contact-now-btn:hover {
+  background-color: transparent;
+  border: 2px solid yellow;
+  color: yellow !important;
+}
+/*hero section css end*/
+
+/*tiny service section css*/
+.tiny-service-section {
+  background-color: #11142c;
+  padding: 30px 0px;
+}
+.tiny-service {
+  text-align: center;
+}
+.tiny-service-icon {
+  font-size: 60px;
+  color: yellow;
+  padding: 10px 0px;
+}
+.tiny-service-text {
+  color: yellow;
+  font-family: arial black;
+  font-size: 18px;
+  padding-top: 5px;
+}
+.tiny-service.bordered {
+  border-right: 2px solid yellow;
+  color: black;
+}
+.tiny-service-section-container {
+  max-width: 100% !important;
+}
+/*tiny service section css end*/
+
+/*about section css*/
+.about-section {
+  padding: 150px 0px;
+}
+
+.about-more-btn {
+  background-color: yellow;
+  padding: 11px 34px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  color: #050201;
+  font-family: arial;
+  font-size: 17px;
+  border-radius: 0px;
+  font-weight: 600;
+  border-radius: 50px;
+  border: 2px solid transparent;
+  transition: all 0.5s;
+}
+.about-more-btn:hover {
+  background-color: transparent;
+  border: 2px solid yellow;
+  color: yellow !important;
+}
+.about-img {
+  text-align: right;
+  position: relative;
+  z-index: 1;
+}
+.about-img::after {
+  position: absolute;
+  content: '';
+  width: 200px;
+  height: 200px;
+  background: yellow;
+  top: -17px;
+  left: -17px;
+  z-index: -1;
+}
+.about-img::before {
+  position: absolute;
+  content: '';
+  width: 200px;
+  height: 200px;
+  background: yellow;
+  bottom: -17px;
+  right: -17px;
+  z-index: -1;
+}
+.about-img img {
+  border: 3px solid yellow;
+}
+.about-content {
+  font-family: inherit;
+  font-size: 18px;
+  color: #565151;
+  letter-spacing: 0.9px;
+  line-height: 28px;
+}
+/*about section css end*/
+
+/*testimonial section css*/
+.testimonial-section {
+  background: #2f1501;
+  padding: 100px 0px;
+}
+
+.testimonial .pic {
+  width: 22%;
+  padding: 20px 0;
+  margin: 0 6% 0 2%;
+  float: left;
+  position: relative;
+  z-index: 1;
+}
+.testimonial .pic::before,
+.testimonial .pic::after {
+  content: '';
+  width: 130px;
+  height: 150px;
+  background: yellow;
+  position: absolute;
+  z-index: -1;
+}
+.testimonial .pic::before {
+  top: 6px;
+  right: -11px;
+}
+.testimonial .pic::after {
+  bottom: 6px;
+  left: -11px;
+}
+.testimonial .pic img {
+  width: 100%;
+  height: auto;
+  border: 3px solid yellow;
+}
+.testimonial .testimonial-content {
+  width: 70%;
+  float: right;
+}
+.testimonial .title {
+  display: block;
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  margin: 0;
+  text-transform: uppercase;
+  padding-top: 65px;
+  margin-bottom: 25px;
+  padding-left: 15px;
+}
+.testimonial .post {
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 27px;
+  color: #fff;
+  text-transform: capitalize;
+  margin-bottom: 25px;
+  padding-left: 15px;
+}
+.testimonial .description {
+  font-size: 16px;
+  color: white;
+  padding: 0 15px;
+  margin: 0;
+  position: relative;
+  opacity: 0.7;
+}
+.testimonial .description::before,
+.testimonial .description::after {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  font-size: 17px;
+  color: yellow;
+  position: relative;
+}
+.testimonial .description::before {
+  content: '\f10d';
+  margin-right: 5px;
+  top: 0;
+  left: 0;
+}
+.testimonial .description:after {
+  content: '\f10e';
+  margin-left: 5px;
+  position: relative;
+  bottom: 0;
+  right: 0;
+}
+/*testimonial section css end*/
+
+/*map and info section*/
+.map_info_section {
+  padding: 100px 0px;
+  background: white;
+}
+h1.details-title {
+  font-size: 20px;
+  color: #5a5858;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+h1.details-title span {
+  color: black;
+  padding-right: 10px;
+}
+
+.info-box {
+  border-left: 7px solid yellow;
+  padding: 20px;
+  margin-left: 30px;
+}
+/*map and info section end*/
+
+/*about experiance client award section*/
+.perallax-about {
+  background: url('../images/parallax-img.jpg');
+  background-position: center;
+  background-size: cover;
+  color: white;
+  padding: 100px 0px;
+}
+.perallax-about-title-content h1 {
+  font-family: arial black;
+  font-size: 40px;
+}
+.perallax-about-title-content p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+.perallax-about-title-content {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.perallax-about-title-content p {
+  opacity: 0.8;
+}
+h3.counter-box-details {
+  color: #979797;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+.counter-box {
+  text-align: center;
+}
+h1.counter-box-title {
+  font-size: 50px;
+}
+/*about experiance client award section end*/
+
+/*footer section*/
+footer.footer-section {
+  background: #262525;
+  padding: 19px 0px;
+  color: white;
+}
+
+.footer-widgets-1 img {
+  width: 300px;
+}
+
+.footer-widgets-1 p {
+  color: #9d9999;
+}
+
+.footer-widgets-1 {
+  text-align: center;
+}
+
+.footer-widgets-2 {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+i.social-icon {
+  padding: 0px 20px;
+  font-size: 40px;
+  color: yellow;
+}
+/*footer section end*/
+
+/*top header css*/
+.top-header-section {
+  background: #11142c;
+  padding: 12px;
+}
+.top-widget-1 {
+  display: flex;
+  align-items: center;
+}
+.top-widget-1 div {
+  padding-right: 25px;
+  color: #8b8b27;
+}
+.top-widget-1 div i {
+  padding-right: 3px;
+}
+.top-widget-1 div a {
+  text-decoration: none;
+  color: #cecdcc;
+}
+.top-widget-2 {
+  text-align: right;
+}
+.top-widget-2 a {
+  text-decoration: none;
+  padding: 10px 13px;
+}
+.top-widget-2 a i {
+  color: #d5d525;
+}
+/*top header css end*/
+
+/*about page css*/
+.about {
+  margin: 110px 0px;
+}
+.separator-title-icon i {
+  font-size: 30px;
+  color: yellow;
+}
+.separator-title-icon {
+  position: relative;
+  width: 50px;
+  margin: auto;
+}
+.separator-title-icon::after {
+  position: absolute;
+  content: '';
+  width: 100px;
+  border-bottom: 3px solid yellow;
+  top: 14px;
+}
+.separator-title-icon::before {
+  position: absolute;
+  content: '';
+  width: 100px;
+  border-bottom: 3px solid yellow;
+  top: 14px;
+  right: 45px;
+}
+.section-title h1 {
+  font-size: 30px;
+  text-transform: uppercase;
+  font-family: arial black;
+  letter-spacing: 1px;
+}
+
+.section-title {
+  text-align: center;
+  display: block;
+  overflow: hidden;
+  margin: 50px 0px;
+}
+/*about page css end*/
+.contact {
+  margin-bottom: 100px;
+}
+#testimonial .section-title {
+  margin-top: 0px !important;
+  margin-bottom: 90px !important;
+  color: #efeae7 !important;
+}
